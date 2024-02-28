@@ -1,0 +1,42 @@
+:root {
+    --color-primary: #00b96b;
+    --color-border-secondary: #f0f0f0;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+button, input, select, textarea {
+    font-family: -apple-system, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.valign-top {
+    vertical-align: top;
+}
+
+.clickable {
+    cursor: pointer;
+}
