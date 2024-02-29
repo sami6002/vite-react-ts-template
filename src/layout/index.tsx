@@ -28,14 +28,14 @@ const useStyles = createStyles(({ token }) => ({
     }
 }))
 
-export default function PageLayout() {
+const PageLayout: React.FC = () => {
     const { styles } = useStyles()
 
     const collapsedValue = useContext(CollapsedContext)
 
-    const [collapsed, setCollapsed] = useState(collapsedValue)
+    const [collapsed, setCollapsed] = useState<boolean>(collapsedValue)
 
-    function handleCollapsed():void {
+    function handleCollapsed() {
         setCollapsed(!collapsed)
     }
 
@@ -60,3 +60,5 @@ export default function PageLayout() {
         </CollapsedContext.Provider>
     )
 }
+
+export default PageLayout

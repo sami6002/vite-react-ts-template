@@ -26,14 +26,18 @@ const items: MenuProps['items'] = [
     },
 ]
 
-const onClick: MenuProps['onClick'] = ({ key }) => {
-    console.log(`Click on item ${key}`);
+interface Props {
+    onCollapsed: () => void
 }
 
-export default function TopBar({onCollapsed}) {
+const TopBar:React.FC<Props> = ({onCollapsed}: Props) => {
     const { styles } = useStyles()
 
     const collapsed = useContext(CollapsedContext)
+
+    const onClick: MenuProps['onClick'] = ({ key }) => {
+        console.log(`Click on item ${key}`);
+    }
 
     return (
         <Flex className={styles.topbar} justify="space-between" align="center">
@@ -54,3 +58,5 @@ export default function TopBar({onCollapsed}) {
         </Flex>
     )
 }
+
+export default TopBar

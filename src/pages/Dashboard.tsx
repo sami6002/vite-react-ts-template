@@ -1,7 +1,7 @@
 import { Flex } from 'antd'
 import Logo from '../assets/react.svg'
 
-export default function Dashboard() {
+const Dashboard: React.FC = () => {
     return (
         <Flex style={{padding: '16px', height: '100%'}} align='center' justify='center' vertical gap='middle'>
             <img src={Logo} width={120} />
@@ -10,3 +10,5 @@ export default function Dashboard() {
         </Flex>
     )
 }
+
+export default Dashboard

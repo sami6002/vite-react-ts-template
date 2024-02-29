@@ -1,9 +1,11 @@
 import { CopyrightOutlined } from '@ant-design/icons'
 
-export default function PageFooter() {
+const PageFooter:React.FC = () => {
     return (
         <>
             <CopyrightOutlined /> Powered by Sami Yin
         </>
     )
 }
+
+export default PageFooter

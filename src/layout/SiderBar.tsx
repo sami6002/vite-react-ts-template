@@ -56,7 +56,7 @@ const items:MenuProps['items'] = [
     
 ]
 
-export default function SiderBar() {
+const SiderBar:React.FC = () => {
     const { styles } = useStyles()
 
     const collapsed = useContext(CollapsedContext)
@@ -70,3 +70,5 @@ export default function SiderBar() {
         </>
     )
 }
+
+export default SiderBar
