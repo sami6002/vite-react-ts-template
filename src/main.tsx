@@ -7,7 +7,7 @@ import './styles/antd.scss'
 import { ConfigProvider } from 'antd'
 
 
-const APP: React.FC = () => {
+export const APP: React.FC = () => {
     return (
         <React.StrictMode>
             <ConfigProvider theme={{
